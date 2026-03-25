@@ -17,7 +17,8 @@ Traveline TNDS TransXChange data is used as the base, then BODS TransXChange and
 - **Bus Open Dats Service (BODS)**: [https://www.travelinedata.org.uk](https://www.bus-data.dft.gov.uk)
 - **Transport for London Open Data:** [https://tfl.gov.uk/info-for/open-data-users/](https://tfl.gov.uk/info-for/open-data-users/)
 - **NapTAN**: [https://beta-naptan.dft.gov.uk](https://beta-naptan.dft.gov.uk)
-- **National Coach Dataset**: [https://data.bus-data.dft.gov.uk/coach/download](https://data.bus-data.dft.gov.uk/coach/download) 
+- **National Coach Dataset**: [https://data.bus-data.dft.gov.uk/coach/download](https://data.bus-data.dft.gov.uk/coach/download)
+- **OpenStreetMap Contributors**: [https://www.openstreetmap.org/about](https://www.openstreetmap.org/about)
 
 ## GB Bus & Metro feeds
 
@@ -89,6 +90,7 @@ Format:
 - Covers every National Rail service. Most bus / ferry replacement routes have been omitted.
 - NaPTAN `AtcoCode` is used for `stop_id`, and `CRS` is used for `stop_code`.
 - Calendars have been deduped.
+- shapes.txt generated from OpenStreetMap data.
 
 National Rail services don't fit easily into US-centric GTFS routes. Instead of distinct lines like 'Harlem Line' or 'New Haven Line' like with New York's rail system, National Rail passengers are more used to operator-name-to-destination directions such as 'ScotRail train to Glasgow Queen Street'. For this reason, National Rail routes in this GTFS feed are split into operator-specific corridors. For example:
 
