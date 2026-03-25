@@ -1,5 +1,3 @@
-# DATA_SOURCES.md
-
 # Upstream data sources and licence notes
 
 This file documents the principal upstream data sources used to build the curated
