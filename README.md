@@ -93,7 +93,7 @@ National Rail services don't fit easily into US-centric GTFS routes. Instead of 
 
 Route ID `SR:ALO-GLQ`, Long Name: `Alloa - Glasgow Queen Street via Stirling`
 
-Where the Route ID is the agency ID, origin and destination CRS codes. `routes.txt` keeps `route_short_name` blank, as there's no useful information to provide in the case of National Rail.
+Where the Route ID is a compound key comprised of the agency ID, origin CRS station code and destination CRS station code. `routes.txt` keeps `route_short_name` blank, as there's no useful information to provide in the case of National Rail.
 
 This means that for each operator, you will have dozens, possibly hundreds of routes. This works well with journey planning systems like OpenTripPlanner. However, if you want to display a typical departure board like you would find in most transport apps e.g. `11:05 ScotRail to Glasgow Queen Street` you will need to modify the data that's displayed - instead of `ROUTE NAME > DESTINATION`, use `AGENCY NAME > DESTINATION`, like Momego (and many other apps) do.
 
