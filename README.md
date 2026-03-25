@@ -48,10 +48,34 @@ Traveline TNDS TransXChange data is used as the base, then BODS TransXChange and
 - All tram and underground/metro services have branded route colors.
 
 #### Extended GTFS Fields
-- `trips.realtime_trip_id`: a compound key to make it easier to match vehicles in BODS' live location SIRI feed to GTFS trips.
+- `trips.realtime_trip_id`: a compound key to make it easier to match vehicles in BODS' live location SIRI feed to GTFS trips. See Realtime Compound Key section for details.
 - `trips.txc_vehicle_journey_ref`: a reference to the original TransXChange `VehicleJourneyRef` for that trip.
 - `stops.stop_bearing`:the NaPTAN `Bearing` value. A cardinal direction for that stop (supports `N`, `NE`, `E`, `SE`, `S`, `SW`, `W`, `NW`).
 - `stops.stop_indicator`:the NaPTAN `Indicator` value. Usually found on stop poles in larger towns and cities.
+
+#### Realtime Compound Key
+
+Format:
+`<AGENCY_ID>:<LINE_KEY>:<DIRECTION_ID>:<ORIGIN_STOP_ID>[:<DESTINATION_STOP_ID>]:<HHMM>`
+
+##### Component rules:
+
+- `AGENCY_ID`: TXC service.AgencyId, uppercased and trimmed.
+- `LINE_KEY`: TXC service.PublicServiceCode normalized to uppercase alphanumeric. If it is purely numeric, leading zeroes are stripped.
+- `DIRECTION_ID`: TXC service.DirectionId as a string
+- `ORIGIN_STOP_ID`: The first stop’s NapTAN AtcoCode.
+- `DESTINATION_STOP_ID`: The last stop’s NapTAN AtcoCode.
+- `HHMM` First stop departure time if present, otherwise trip departure time. Over-midnight values are wrapped mod 24, so `25:10:00` becomes `0110`.
+
+##### Example:
+
+`NOC1:10:0:STOPA:STOPB:0800`
+
+##### Important behavior:
+
+- If `agency_id`, `line_key`, `origin_stop_id`, or `HHMM` is missing, the field is exported blank.
+- This is a semi-stable matching key, not a globally unique primary key.
+- For realtime matching, developers should still scope by service date separately.
 
 ## National Rail feed
 
