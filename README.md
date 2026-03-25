@@ -1,7 +1,7 @@
 > [!NOTE]
 > This repository contains a curated GTFS dataset assembled from multiple upstream public transport data sources.
 > The compilation, transformations, and original additions in this repository are licensed under CC BY 4.0.
-> Underlying source data remains subject to its original licence terms and attribution requirements. See DATA_SOURCES.md.
+> Underlying source data remains subject to its original licence terms and attribution requirements. See [DATA_SOURCES.md](/DATA_SOURCES.md).
 
 # GTFS Feeds for Great Britain
 
