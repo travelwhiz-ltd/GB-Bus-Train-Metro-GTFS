@@ -51,8 +51,8 @@ Traveline TNDS TransXChange data is used as the base, then BODS TransXChange and
 #### Extended GTFS Fields
 - `trips.realtime_trip_id`: a compound key to make it easier to match vehicles in BODS' live location SIRI feed to GTFS trips. See Realtime Compound Key section for details.
 - `trips.txc_vehicle_journey_ref`: a reference to the original TransXChange `VehicleJourneyRef` for that trip.
-- `stops.stop_bearing`:the NaPTAN `Bearing` value. A cardinal direction for that stop (supports `N`, `NE`, `E`, `SE`, `S`, `SW`, `W`, `NW`).
-- `stops.stop_indicator`:the NaPTAN `Indicator` value. Usually found on stop poles in larger towns and cities.
+- `stops.stop_bearing`: the NaPTAN `Bearing` value. A cardinal direction for that stop (supports `N`, `NE`, `E`, `SE`, `S`, `SW`, `W`, `NW`).
+- `stops.stop_indicator`: the NaPTAN `Indicator` value. Usually found on stop poles in larger towns and cities.
 
 #### Realtime Compound Key
 
