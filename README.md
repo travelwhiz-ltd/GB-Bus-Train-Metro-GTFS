@@ -11,6 +11,8 @@ GTFS feeds are generated between 22.00 and 00.00 UTC each day.
 
 Traveline TNDS TransXChange data is used as the base, then BODS TransXChange and TfL Journey Planner TransXChange data used as supplementary data sources which replace Traveline TNDS data on an operator/route/trip basis.
 
+## Data Sources
+
 - **Traveline TNDS**: [https://www.travelinedata.org.uk](https://www.travelinedata.org.uk)
 - **Bus Open Dats Service (BODS)**: [[https://www.travelinedata.org.uk](https://www.bus-data.dft.gov.uk))
 - **Transport for London Open Data:** [https://tfl.gov.uk/info-for/open-data-users/](https://tfl.gov.uk/info-for/open-data-users/)
