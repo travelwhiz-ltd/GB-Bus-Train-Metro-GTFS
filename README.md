@@ -14,7 +14,7 @@ Traveline TNDS TransXChange data is used as the base, then BODS TransXChange and
 ## Data Sources
 
 - **Traveline TNDS**: [https://www.travelinedata.org.uk](https://www.travelinedata.org.uk)
-- **Bus Open Dats Service (BODS)**: [[https://www.travelinedata.org.uk](https://www.bus-data.dft.gov.uk))
+- **Bus Open Dats Service (BODS)**: [https://www.travelinedata.org.uk](https://www.bus-data.dft.gov.uk)
 - **Transport for London Open Data:** [https://tfl.gov.uk/info-for/open-data-users/](https://tfl.gov.uk/info-for/open-data-users/)
 - **NapTAN**: [https://beta-naptan.dft.gov.uk](https://beta-naptan.dft.gov.uk)
 - **National Coach Dataset**: [https://data.bus-data.dft.gov.uk/coach/download](https://data.bus-data.dft.gov.uk/coach/download) 
