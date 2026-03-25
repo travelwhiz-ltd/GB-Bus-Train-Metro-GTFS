@@ -101,9 +101,8 @@ Where the Route ID is a compound key comprised of the agency ID, origin CRS stat
 This means that for each operator, you will have dozens, possibly hundreds of routes. This works well with journey planning systems like OpenTripPlanner. However, if you want to display a typical departure board like you would find in most transport apps e.g. `11:05 ScotRail to Glasgow Queen Street` you will need to modify the data that's displayed - instead of `ROUTE NAME > DESTINATION`, use `AGENCY NAME > DESTINATION`, like Momego (and many other apps) do.
 
 #### Extended GTFS Fields
-`stop_times.platform_code`: Where available, the published platform number for each arrival/departure is included.
-
-`trips.realtime_trip_id`:
+- `stop_times.platform_code`: Where available, the published platform number for each arrival/departure is included.
+- `trips.realtime_trip_id`:
 A compound key of **Service UID** and **Run Date** e.g. `U10021:20260401` to easily match GTFS trip IDs with real-time service IDs.
 
 ## Contributions Welcome ##
