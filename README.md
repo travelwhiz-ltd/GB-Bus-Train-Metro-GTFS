@@ -89,9 +89,16 @@ Format:
 - NaPTAN `AtcoCode` is used for `stop_id`, and `CRS` is used for `stop_code`.
 - Calendars have been deduped.
 
+National Rail services don't fit easily into US-centric GTFS routes. Instead of distinct lines like 'Harlem Line' or 'New Haven Line' like with New York's rail system, National Rail passengers are more used to operator-name-to-destination directions such as 'ScotRail train to Glasgow Queen Street'. For this reason, National Rail routes in this GTFS feed are split into operator-specific corridors. For example:
+
+Route ID `SR:ALO-GLQ`, Long Name: `Alloa - Glasgow Queen Street via Stirling`
+
+Where the Route ID is the agency ID, origin and destination CRS codes. `routes.txt` keeps `route_short_name` blank, as there's no useful information to provide in the case of National Rail.
+
+This means that for each operator, you will have dozens, possibly hundreds of routes. This works well with journey planning systems like OpenTripPlanner. However, if you want to display a typical departure board like you would find in most transport apps e.g. `11:05 ScotRail to Glasgow Queen Street` you will need to modify the data that's displayed - instead of `ROUTE NAME > DESTINATION`, use `AGENCY NAME > DESTINATION`, like Momego (and many other apps) do.
+
 #### Extended GTFS Fields
-`stop_times.platform_code`:
-Where available, the published platform code for each arrival/departure is included.
+`stop_times.platform_code`: Where available, the published platform number for each arrival/departure is included.
 
 `trips.realtime_trip_id`:
 A compound key of **Service UID** and **Run Date** e.g. `U10021:20260401` to easily match GTFS trip IDs with real-time service IDs.
