@@ -1,5 +1,3 @@
-# NOTICE.md
-
 This repository contains a curated GTFS feed assembled from multiple upstream
 public transport data sources covering Great Britain.
 
