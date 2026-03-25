@@ -81,6 +81,7 @@ Format:
 
 #### Downloads
 
+[gb-nationalrail.gtfs.zip](https://storage.travelwhiz.app/generated-gtfs/gb-nationalrail.gtfs.zip)
 
 #### Features
 
