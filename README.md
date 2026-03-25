@@ -5,7 +5,7 @@
 
 # GTFS Feeds for Great Britain
 
-This is a collection of data-enriched, curated GTFS feeds used by Momego and other TravelWhiz apps and websites, free for use.
+This is a collection of data-enriched, curated GTFS feeds used by [Momego](https://travelwhiz.app) and other TravelWhiz apps and websites, free for use.
 
 GTFS feeds are generated between 22.00 and 00.00 UTC each day.
 
