@@ -48,6 +48,10 @@ Traveline TNDS TransXChange data is used as the base, then BODS TransXChange and
 - Glasgow Subway services now split into two logical routes 'Inner Circle' and 'Outer Circle'.
 - All tram and underground/metro services have branded route colors.
 
+#### Notes
+
+Two operators (FlixBus and Ember) have been removed as they have their own official GTFS feeds which supersedes their TNDS/NCSD versions.
+
 #### Extended GTFS Fields
 - `trips.realtime_trip_id`: a compound key to make it easier to match vehicles in BODS' live location SIRI feed to GTFS trips. See Realtime Compound Key section for details.
 - `trips.txc_vehicle_journey_ref`: a reference to the original TransXChange `VehicleJourneyRef` for that trip.
@@ -104,6 +108,13 @@ This means that for each operator, you will have dozens, possibly hundreds of ro
 - `stop_times.platform_code`: Where available, the published platform number for each arrival/departure is included.
 - `trips.realtime_trip_id`:
 A compound key of **Service UID** and **Run Date** e.g. `U10021:20260401` to easily match GTFS trip IDs with real-time service IDs.
+
+#### Other UK GTFS Feeds
+
+- **Ember**: [https://api.ember.to/v1/gtfs/static](https://api.ember.to/v1/gtfs/static)
+- **FlixBus UK/EU**: [http://gtfs.gis.flix.tech/gtfs_generic_eu.zip](http://gtfs.gis.flix.tech/gtfs_generic_eu.zip)
+- **Transport for Ireland**: [https://developer.nationaltransport.ie](https://developer.nationaltransport.ie)
+- **Eurostar**: [https://transport.data.gouv.fr/datasets/eurostar-gtfs-plan-de-transport-et-temps-reel](https://transport.data.gouv.fr/datasets/eurostar-gtfs-plan-de-transport-et-temps-reel)
 
 ## Contributions Welcome ##
 If you would like to see improvements to this feed, feel free to raise an issue. We want to make this the most comprehensive, data-enriched source for GB bus, metro and rail GTFS data out there.
