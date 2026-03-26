@@ -24,17 +24,17 @@ Traveline TNDS TransXChange data is used as the base, then BODS TransXChange and
 
 #### Downloads
 
-- East Anglia:
-- East Midlands:
-- South East & London:
-- North East England:
-- North West England:
-- Scotland:
-- South West England:
-- Wales:
-- West Midlands:
-- Yorkshire:
-- National Coach Services:
+- East Anglia: [uk-busmetro-EA.gtfs.zip](https://storage.travelwhiz.app/generated-gtfs/uk-busmetro-EA.gtfs.zip)
+- East Midlands: [uk-busmetro-EM.gtfs.zip](https://storage.travelwhiz.app/generated-gtfs/uk-busmetro-EM.gtfs.zip)
+- South East & London: [uk-busmetro-SE-LONDON.gtfs.zip](https://storage.travelwhiz.app/generated-gtfs/uk-busmetro-SE-LONDON.gtfs.zip)
+- North East England: [uk-busmetro-NE.gtfs.zip](https://storage.travelwhiz.app/generated-gtfs/uk-busmetro-NE.gtfs.zip)
+- North West England: [uk-busmetro-NW.gtfs.zip](https://storage.travelwhiz.app/generated-gtfs/uk-busmetro-NW.gtfs.zip)
+- Scotland: [uk-busmetro-S.gtfs.zip](https://storage.travelwhiz.app/generated-gtfs/uk-busmetro-S.gtfs.zip)
+- South West England: [uk-busmetro-SW.gtfs.zip](https://storage.travelwhiz.app/generated-gtfs/uk-busmetro-SW.gtfs.zip)
+- Wales: [uk-busmetro-W.gtfs.zip](https://storage.travelwhiz.app/generated-gtfs/uk-busmetro-W.gtfs.zip)
+- West Midlands: [uk-busmetro-WM.gtfs.zip](https://storage.travelwhiz.app/generated-gtfs/uk-busmetro-WM.gtfs.zip)
+- Yorkshire: [uk-busmetro-Y.gtfs.zip](https://storage.travelwhiz.app/generated-gtfs/uk-busmetro-Y.gtfs.zip)
+- National Coach Services: [uk-coach.gtfs.zip](https://storage.travelwhiz.app/generated-gtfs/uk-coach.gtfs.zip)
 
 #### Features
 
