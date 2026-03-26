@@ -109,7 +109,9 @@ This means that for each operator, you will have dozens, possibly hundreds of ro
 - `trips.realtime_trip_id`:
 A compound key of **Service UID** and **Run Date** e.g. `U10021:20260401` to easily match GTFS trip IDs with real-time service IDs.
 
-#### Other UK GTFS Feeds
+## Other UK Transport GTFS Feeds
+
+If an official GTFS feed exists for a transport operator, we tend to use that instead of Traveline. For completeness, here are some links to official GTFS feeds and transport operator developer pages.
 
 - **Ember**: [https://api.ember.to/v1/gtfs/static](https://api.ember.to/v1/gtfs/static)
 - **FlixBus UK/EU**: [http://gtfs.gis.flix.tech/gtfs_generic_eu.zip](http://gtfs.gis.flix.tech/gtfs_generic_eu.zip)
