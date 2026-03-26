@@ -4,6 +4,7 @@
 > Underlying source data remains subject to its original licence terms and attribution requirements. See [DATA_SOURCES.md](/DATA_SOURCES.md).
 
 # GTFS Feeds for Great Britain
+### Covers all bus, coach, National Rail, ferry, Underground and metro system.
 
 This is a collection of data-enriched, curated GTFS feeds used by [Momego](https://travelwhiz.app) and other TravelWhiz apps and websites, free for use.
 
