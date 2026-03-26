@@ -114,10 +114,11 @@ A compound key of **Service UID** and **Run Date** e.g. `U10021:20260401` to eas
 
 If an official GTFS feed exists for a transport operator, we tend to use that instead of Traveline. For completeness, here are some links to official GTFS feeds and transport operator developer pages.
 
-- **Ember**: [https://api.ember.to/v1/gtfs/static](https://api.ember.to/v1/gtfs/static)
 - **FlixBus UK/EU**: [http://gtfs.gis.flix.tech/gtfs_generic_eu.zip](http://gtfs.gis.flix.tech/gtfs_generic_eu.zip)
 - **Transport for Ireland**: [https://developer.nationaltransport.ie](https://developer.nationaltransport.ie)
 - **Eurostar**: [https://transport.data.gouv.fr/datasets/eurostar-gtfs-plan-de-transport-et-temps-reel](https://transport.data.gouv.fr/datasets/eurostar-gtfs-plan-de-transport-et-temps-reel)
+
+Note: Ember hasn't made their GTFS feed public; Translink NI has made their transport data available in ATCO-CIF formats.
 
 ## Contributions Welcome ##
 If you would like to see improvements to this feed, feel free to raise an issue. We want to make this the most comprehensive, data-enriched source for GB bus, metro and rail GTFS data out there.
