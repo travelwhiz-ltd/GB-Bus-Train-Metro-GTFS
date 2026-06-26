@@ -48,6 +48,7 @@ Traveline TNDS TransXChange data is used as the base, then BODS TransXChange and
 - London and SE Traveline regions have been merged into one region (`SE-LONDON`) so TfL sources don't overlap.
 - Glasgow Subway services now split into two logical routes 'Inner Circle' and 'Outer Circle'.
 - All tram and underground/metro services have branded route colors.
+- Curated parent/child stop relationships. Metro stations have child platform stops; Bus/coach stations have stance/gate child stops.
 
 #### Notes
 
@@ -58,6 +59,7 @@ Two operators (FlixBus and Ember) have been removed as they have their own offic
 - `trips.txc_vehicle_journey_ref`: a reference to the original TransXChange `VehicleJourneyRef` for that trip.
 - `stops.stop_bearing`: the NaPTAN `Bearing` value. A cardinal direction for that stop (supports `N`, `NE`, `E`, `SE`, `S`, `SW`, `W`, `NW`).
 - `stops.stop_indicator`: the NaPTAN `Indicator` value. Usually found on stop poles in larger towns and cities.
+- `stops.platform_code`: Contains stance/gate numbers for bus station stances.
 
 #### Realtime Compound Key
 
